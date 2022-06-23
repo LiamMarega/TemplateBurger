@@ -23,13 +23,14 @@ function Presentacion() {
               CASA!
             </h2>
           </div>
+
           <Image id='imgBurger' src={imgBurger} fluid width={700} />
           <div className='Images_BlackAndWhite'>
             <Image id='imgTomato' src={imgTomato} fluid width={200} />
             <Image id='imgLettuce' src={imgLettuce} fluid  />
             <Image id='imgMeet' src={imgMeet} fluid width={200} />
           </div>
-        </Col>
+		</Col>
       </Row>
     </Container>
   );

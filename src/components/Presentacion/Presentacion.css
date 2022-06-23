@@ -1,174 +1,190 @@
 .LandingPage__Container_NavBar {
-	height: 100%;
-	min-height: 100vh;
-	flex-direction: row;
-	justify-content: center;
-	transition: 1.5s;
-	display: flex;
-    align-content: center;
-  }
+  height: 100%;
+  min-height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  transition: 1.5s;
+  display: flex;
+  align-content: center;
+}
 
-  
+
 .Landingpage__Container_image {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-end;
-	background-attachment: fixed;
-  
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-  }
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-attachment: fixed;
 
-  .Container_Landing__Letras h2 {
-	width: 100%;
-	height: 100%;
-	font-size: 8rem;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	font-family: 'Anton', sans-serif;
-	text-align: start;
-  }
-
-  .Container_Landing__Letras h3 {
-	width: 100%;
-	height: 100%;
-	font-size: 3rem;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	font-family: 'Anton', sans-serif;
-	text-align: start;
-	color: var(--color-secundario)
-  }
-
-  .Container_Landing__Letras {
-	background-color:  var(--color-primario);
-	width: 50%;
-	border-radius: 0px 20px 20px 0px;
-	margin: -20px;
-	padding: 10px;
-	animation-name: mostrar;
-	animation-duration: 3s;
-	animation-iteration-count: initial;
-  }
-  
-  @keyframes mostrar {
-	from {
-	  margin-left: -100%;
-	}
-	to {
-	  margin-right: -100%;
-	}
-  }
-  
-
-.Images_BlackAndWhite img{
-	z-index: 3;
-	position: absolute;
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-#imgBurger{
-z-index: 2;
+.Container_Landing__Letras h2 {
+  width: 100%;
+  height: 100%;
+  font-size: 8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-family: 'Anton', sans-serif;
+  text-align: start;
+}
+
+.Container_Landing__Letras h2::selection {
+	
+		background: orangered;
+		color: pink;
 	
 }
 
-#imgTomato{
-	bottom: 80%;
-	right: 5%;
-	animation-name: TomatoMove;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear
+.Container_Landing__Letras h3 {
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-family: 'Anton', sans-serif;
+  text-align: start;
+  color: var(--color-secundario);
 }
 
-#imgMeet{
-
-	right: 50%;
-	width: 220px;
-	animation-name: MeetMove;
-	animation-duration: 7s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear
+.Container_Landing__Letras {
+  background-color: var(--color-primario);
+  width: 50%;
+  border-radius: 0px 20px 20px 0px;
+  margin: -20px;
+  padding: 10px;
+  animation-name: mostrar;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
 }
 
-#imgLettuce{
-	z-index: 1;
-	top: 5%;
-	right: 43%;
-	width: 20%;
-	transform: rotate(150deg);
-	animation-name: LettuceMove;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear
-	
+@keyframes mostrar {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-right: -100%;
+  }
+}
+
+.Images_BlackAndWhite img {
+  z-index: 3;
+  position: absolute;
+}
+
+#imgBurger {
+  position: absolute;
+opacity: 0;
+  z-index: 2;
+  animation-name: BurgerMove;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+ animation-fill-mode: forwards;
+
+}
+
+#imgTomato {
+  bottom: 80%;
+  right: 5%;
+  animation-name: TomatoMove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#imgMeet {
+  right: 50%;
+  width: 220px;
+  animation-name: MeetMove;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#imgLettuce {
+  z-index: 1;
+  top: 5%;
+  right: 43%;
+  width: 20%;
+  transform: rotate(150deg);
+  animation-name: LettuceMove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes MeetMove {
-	0% {
-		bottom: -5%;
-		right: 50%;
-		width: 220px;
-	}
-
-	50%{
-		bottom: 5%;
-		right: 50%;
-		width: 220px;
-	}
-
-	100% {
-		bottom: -5%;
-		right: 50%;
-		width: 220px;
-	
-	
-	}
+  0% {
+    bottom: -5%;
+    right: 50%;
+    width: 220px;
   }
-  
+
+  50% {
+    bottom: 5%;
+    right: 50%;
+    width: 220px;
+  }
+
+  100% {
+    bottom: -5%;
+    right: 50%;
+    width: 220px;
+  }
+}
 
 @keyframes TomatoMove {
-	0% {
-		bottom: 80%;
-		right: 5%;
-	}
-
-	50%{
-		bottom: 77%;
-		right: 0%;
-	}
-
-	100% {
-		bottom: 80%;
-		right: 5%;
-	
-	
-	}
+  0% {
+    bottom: 80%;
+    right: 5%;
   }
-  
+
+  50% {
+    bottom: 77%;
+    right: 0%;
+  }
+
+  100% {
+    bottom: 80%;
+    right: 5%;
+  }
+}
 
 @keyframes LettuceMove {
-	0% {
-	top: 5%;
-	right: 43%;
-	}
-
-	50%{
-		top: -2%;
-		right: 40%;
-	}
-
-	100% {
-		top: 5%;
-		right: 43%;
-	
-	
-	}
+  0% {
+    top: 5%;
+    right: 43%;
   }
-  
+
+  50% {
+    top: -2%;
+    right: 40%;
+  }
+
+  100% {
+    top: 5%;
+    right: 43%;
+  }
+}
+
+@keyframes BurgerMove {
+  from {
+	right: 15%;
+	opacity: 1;
+	bottom: -60%;
+  }
+
+  to {
+	right: 15%;
+	bottom: 20%;
+	opacity: 1;
+  }
+}

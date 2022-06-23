@@ -20,7 +20,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import NavBar from '../NavBar/NavBar';
 import Presentacion from '../Presentacion/Presentacion';
-import SeccionTresBurgers from '../SeccionTresBurgers/SeccionTresBurgers';
+import SeccionTresBurgers from '../Menu/Menu';
 
 const style = {
   position: 'absolute',
