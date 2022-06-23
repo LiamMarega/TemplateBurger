@@ -1,10 +1,12 @@
 *{
   box-sizing: content-box;
+  
 
 }
 
 .App {
   text-align: center;
+  
 }
 
 .App::selection {

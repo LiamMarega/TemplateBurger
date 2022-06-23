@@ -128,7 +128,7 @@ function Landingpage() {
         <Presentacion />
 
         {/* SECCION 2 */}
-        <Row className='LandingPage__Container_Row_Dos'>
+{/*         <Row className='LandingPage__Container_Row_Dos'>
           <Col xs={12} xl={12}>
             <Figure className='LandingPage__LogoBar'>
               <Figure.Image className='FigureLocal' alt='LocalAnimado' src={LocalAnimado} />
@@ -152,12 +152,12 @@ function Landingpage() {
               </Col>
             </Container>
           </Col>
-        </Row>
+        </Row> */}
 
         {/* SECCION 3 */}
 		<SeccionTresBurgers />
         {/* SECCION 4 */}
-        <Row id='about' className='LandingPage__Container_Row_Cinco'>
+     {/*    <Row id='about' className='LandingPage__Container_Row_Cinco'>
           <Col className='LogoImagenInfo' sm={12} md={6} xl={6}>
             <Image className='LogoImagenInfo' src={bar2}></Image>
             <h3>Horarios</h3> <p>6:00 am - 19:00 pm</p>
@@ -189,7 +189,7 @@ function Landingpage() {
             </button>
           </Col>
         </Row>
-
+ */}
         <Row className='LandingPage__Container_Row_Footer'>
           <Col sm={12} xl={12}>
             <div className='centradoFooter'>
