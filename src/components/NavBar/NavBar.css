@@ -30,7 +30,7 @@
   }
   
   .navbar.active {
-	background-color:  var(--color-terciario);
+	background-color:  var(--color-secundario);
 	padding: 19px;
 	align-content: center;
 	align-items: center;

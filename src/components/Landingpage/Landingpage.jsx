@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import './Landingpage.css';
 
-import { LocalAnimado, bar2, bar3, Galeria1, Galeria2, Galeria3, Galeria4, Galeria5, Galeria6, Galeria7, Galeria8 } from '../../images/index.jsx';
 import { ImgMenu } from '../../images/index.jsx';
 import { Container, Row, Col, Image, Figure, Spinner } from 'react-bootstrap';
 
@@ -20,7 +19,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import NavBar from '../NavBar/NavBar';
 import Presentacion from '../Presentacion/Presentacion';
-import SeccionTresBurgers from '../SeccionTresBurgers/SeccionTresBurgers';
+import SeccionTresBurgers from '../Menu/Menu';
 
 const style = {
   position: 'absolute',
@@ -41,7 +40,7 @@ function srcset(image, size, rows = 2, cols = 2) {
   };
 }
 
-const itemData = [
+/* const itemData = [
   {
     img: Galeria1,
     title: 'Breakfast',
@@ -81,7 +80,7 @@ const itemData = [
     img: Galeria8,
     title: 'Fern'
   }
-];
+]; */
 
 function Landingpage() {
   const [open, setOpen] = useState(false);
@@ -128,7 +127,7 @@ function Landingpage() {
         <Presentacion />
 
         {/* SECCION 2 */}
-        <Row className='LandingPage__Container_Row_Dos'>
+{/*         <Row className='LandingPage__Container_Row_Dos'>
           <Col xs={12} xl={12}>
             <Figure className='LandingPage__LogoBar'>
               <Figure.Image className='FigureLocal' alt='LocalAnimado' src={LocalAnimado} />
@@ -152,12 +151,12 @@ function Landingpage() {
               </Col>
             </Container>
           </Col>
-        </Row>
+        </Row> */}
 
         {/* SECCION 3 */}
 		<SeccionTresBurgers />
         {/* SECCION 4 */}
-        <Row id='about' className='LandingPage__Container_Row_Cinco'>
+     {/*    <Row id='about' className='LandingPage__Container_Row_Cinco'>
           <Col className='LogoImagenInfo' sm={12} md={6} xl={6}>
             <Image className='LogoImagenInfo' src={bar2}></Image>
             <h3>Horarios</h3> <p>6:00 am - 19:00 pm</p>
@@ -189,7 +188,7 @@ function Landingpage() {
             </button>
           </Col>
         </Row>
-
+ */}
         <Row className='LandingPage__Container_Row_Footer'>
           <Col sm={12} xl={12}>
             <div className='centradoFooter'>
