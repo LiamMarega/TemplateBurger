@@ -13,7 +13,7 @@ function Presentacion() {
 	  
   return (
     <Container fluid>
-      <Row id='home' fluid className='LandingPage__Container_NavBar'>
+      <Row id='home' className='LandingPage__Container_NavBar'>
         <Col style={containerStyle} className='Landingpage__Container_image'>
           <div className='Container_Landing__Letras'>
 			<h3>MUNDO BURGER</h3>
@@ -24,11 +24,11 @@ function Presentacion() {
             </h2>
           </div>
 
-          <Image id='imgBurger' src={imgBurger} fluid width={700} />
+          <Image fluid id='imgBurger' src={imgBurger}  width={700} />
           <div className='Images_BlackAndWhite'>
-            <Image id='imgTomato' src={imgTomato} fluid width={200} />
-            <Image id='imgLettuce' src={imgLettuce} fluid  />
-            <Image id='imgMeet' src={imgMeet} fluid width={200} />
+            <Image fluid id='imgTomato' src={imgTomato}  width={200} />
+            <Image fluid id='imgLettuce' src={imgLettuce}   />
+            <Image fluid id='imgMeet' src={imgMeet}  width={200} />
           </div>
 		</Col>
       </Row>

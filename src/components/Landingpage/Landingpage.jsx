@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import './Landingpage.css';
 
-import { LocalAnimado, bar2, bar3, Galeria1, Galeria2, Galeria3, Galeria4, Galeria5, Galeria6, Galeria7, Galeria8 } from '../../images/index.jsx';
 import { ImgMenu } from '../../images/index.jsx';
 import { Container, Row, Col, Image, Figure, Spinner } from 'react-bootstrap';
 
@@ -41,7 +40,7 @@ function srcset(image, size, rows = 2, cols = 2) {
   };
 }
 
-const itemData = [
+/* const itemData = [
   {
     img: Galeria1,
     title: 'Breakfast',
@@ -81,7 +80,7 @@ const itemData = [
     img: Galeria8,
     title: 'Fern'
   }
-];
+]; */
 
 function Landingpage() {
   const [open, setOpen] = useState(false);
