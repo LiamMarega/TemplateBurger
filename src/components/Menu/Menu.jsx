@@ -33,12 +33,12 @@ function Menu() {
             </Col>
           </Col>
           <Col className='Menu_Col' sm={12} md={6} xl={6}>
-            <Image className='FondoLogoImagen' src={imgBurger}></Image>
+            <Image fluid className='FondoLogoImagen' src={imgBurger}></Image>
           </Col>
         </Row>
         <Row>
           <Col className='Menu_Col' sm={12} md={6} xl={6}>
-            <Image className='FondoLogoImagen' id='BurgerBlack' src={imgBurgerBlack}></Image>
+            <Image fluid className='FondoLogoImagen' id='BurgerBlack' src={imgBurgerBlack}></Image>
           </Col>
           <Col className='Menu_Col' sm={12} md={6} xl={6}>
             <h2 style={{ width: '100%', textAlign: 'start', fontWeight: '800', fontSize: '45px' }}>Trump Menu</h2>
@@ -72,12 +72,12 @@ function Menu() {
             </Col>
           </Col>
           <Col className='Menu_Col' sm={12} md={6} xl={6}>
-            <Image className='FondoLogoImagen' src={imgBurger3}></Image>
+            <Image fluid className='FondoLogoImagen' src={imgBurger3}></Image>
           </Col>
         </Row>
       </Container>
 	  <Container className='Menu_ImgBugerBreak'>
-		<Image src={imgBurgerBreak} fluid></Image>
+		<Image fluid src={imgBurgerBreak} fluid></Image>
 	  </Container>
     </Container>
   );

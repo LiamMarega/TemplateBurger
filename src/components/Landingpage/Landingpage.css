@@ -12,6 +12,7 @@
 
 .LandingPage__Container {
   height: 100%;
+  width: 100%;
   background-color: var(--color-primario);
   z-index: 2;
   -webkit-box-shadow: -1px -36px 42px 6px var(--color-primario);
