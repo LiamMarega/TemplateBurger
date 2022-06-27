@@ -28,10 +28,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+  margin-bottom: 20%;
 }
 
 
-.Menu_Col button{
+.Menu_Col button, .Menu_Col a{
+	color: black;
+	text-decoration: none;
 width: 150px;
 height: 40px;
 }
@@ -47,16 +50,43 @@ height: 40px;
 	padding-top: 10%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .LandingPage__Container_Row_Tres {
-    height: 100%;
-    -webkit-box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
-    box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
-    background: var(--color-secundario);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Anton', sans-serif;
-    font-size: 2vmin !important;
-  }
+.Menu_Col {
+	text-align: start;
 }
+
+
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+/* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+	.Menu_Col {
+		text-align: center;
+	}
+
+	.Menu_Col button, .Menu_Col a{
+		color: black;
+		text-decoration: none;
+		margin-right: 15%;
+	}
+	
+	 }
+	
+	/* // Small devices (landscape phones, less than 768px) */
+	@media (max-width: 767.98px) {  }
+	
+	/* // Medium devices (tablets, less than 992px) */
+	@media (max-width: 991.98px) { 
+		.Menu_Col{
+			text-align: start;
+		}
+	 }
+	
