@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image, Button, Stack } from 'react-bootstrap';
-import { imgBurger, imgBurgerBlack, imgBurger3, imgBurgerBreak } from '../../images/index.jsx';
+import { imgBurger, imgBurgerBlack, imgBurger3, imgBurgerBreak } from '../../../public/images/index.jsx';
 import { GiHamburger } from 'react-icons/gi';
 import { FaIceCream } from 'react-icons/fa';
 

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Papas.css';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-import { imgPapasChicas, imgPapasMedianas, imgPapasGrandes } from  "../../images/index.jsx"
+import { imgPapasChicas, imgPapasMedianas, imgPapasGrandes } from  "../../../public/images/index.jsx"
 import { Animated } from 'react-animated-css';
 
 

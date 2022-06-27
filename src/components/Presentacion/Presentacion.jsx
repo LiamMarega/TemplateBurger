@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Presentacion.css"
-import { imgBurger, imgLettuce, imgTomato, imgMeet } from '../../images/index.jsx';
+import { imgBurger, imgLettuce, imgTomato, imgMeet } from '../../../public/images/index.jsx';
 import { Container, Row, Col, Image, } from 'react-bootstrap';
 
 function Presentacion() {
