@@ -29,22 +29,20 @@ function NavBar({ handleOpen }) {
     <>
       <Navbar fixed='top'>
         <Container fluid className={navBarBackground ? 'navbar active' : 'navbar false'}>
-          <Link activeClass='active' to='home' smooth={true} duration={1000} delay={100}>
-            <Navbar.Brand>F&D</Navbar.Brand>
-          </Link>
+          
+            <Navbar.Brand href='/'>MG</Navbar.Brand>
+        
 
           <Nav className='me-auto'>
-            <Link activeClass='active' to='home' smooth={true} duration={1000} delay={100}>
+            <Link activeClass='active' to='home' smooth={true} duration={1000} >
               <Nav>Inicio</Nav>
             </Link>
-            <Link activeClass='active' to='about' smooth={true} duration={1000} delay={100}>
-              <Nav>Sobre Nosotros</Nav>
+           
+              <Nav.Link href='/about'>Sobre Nosotros</Nav.Link>
+           
+            <Link activeClass='active' to='Menu' smooth={true} duration={1000} >
+              <Nav>Menu</Nav>
             </Link>
-            <Link activeClass='active' to='photos' smooth={true} duration={1000} delay={100}>
-              <Nav>Fotos</Nav>
-            </Link>
-
-            <Nav onClick={handleOpen}>Menu</Nav>
           </Nav>
         </Container>
       </Navbar>

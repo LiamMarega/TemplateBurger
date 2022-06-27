@@ -9,5 +9,8 @@ export { default as imgBurgerBreak } from "./burgerBreak.png"
 export { default as imgMeet } from "./meet.png"
 export { default as imgLettuce } from "./lettuce.png"
 export { default as imgTomato } from "./tomato.png"
+export { default as imgPapasChicas } from "./PapasChicas.png"
+export { default as imgPapasMedianas } from "./papasMedianas.png"
+export { default as imgPapasGrandes } from "./papasGrandes.png"
 
 

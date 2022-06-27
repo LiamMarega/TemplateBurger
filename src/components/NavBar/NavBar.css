@@ -1,7 +1,6 @@
 .navbar {
 	top: -10px;
 	width: 100%;
-  
 	font-size: 1.2rem;
 	transition: 0.7s;
 	color: black;
@@ -21,19 +20,14 @@
 	justify-content: center;
   }
   
-  .navbar.false {
-	background-color: transparent;
-	padding: 19px;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-  }
+
   
   .navbar.active {
 	background-color:  var(--color-secundario);
 	padding: 19px;
 	align-content: center;
 	align-items: center;
+	color: black !important;
 	justify-content: center;
   }
   

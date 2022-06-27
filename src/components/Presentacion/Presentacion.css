@@ -1,6 +1,7 @@
 .LandingPage__Container_NavBar {
   height: 100%;
   width: 100%;
+  padding-top: 10%;
   min-height: 100vh;
   flex-direction: row;
   justify-content: center;
@@ -86,7 +87,7 @@
 opacity: 0;
   z-index: 2;
   animation-name: BurgerMove;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-delay: 2s;
@@ -106,7 +107,7 @@ opacity: 0;
 
 #imgMeet {
   right: 50%;
-  width: 30%;
+  width: 10%;
   animation-name: MeetMove;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -114,7 +115,7 @@ opacity: 0;
 }
 
 #imgLettuce {
-	width: 30%;
+	width: 20%;
   z-index: 1;
   top: 5%;
   right: 43%;
@@ -179,19 +180,20 @@ opacity: 0;
   }
 }
 
-@keyframes BurgerMove {
-  from {
-	right: 15%;
-	opacity: 1;
-	bottom: -60%;
-  }
 
-  to {
-	right: 15%;
-	bottom: 20%;
-	opacity: 1;
+@keyframes BurgerMove {
+	from {
+	  right: 15%;
+	  opacity: 0;
+	  bottom: -60%;
+	}
+  
+	to {
+	  right: 12%;
+	  bottom: 5%;
+	  opacity: 1;
+	}
   }
-}
 
 
 /* MEDIA QUERY --- MEDIA QUERY --- MEDIA QUERY  */
@@ -229,7 +231,22 @@ opacity: 0;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+#imgMeet {
+	right: 50%;
+	width: 30%;
+	animation-name: MeetMove;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  }
+  #imgBurger {
+	right: 1%;
+	width: 60%;
 
+  }
+  .Menu_Col {
+	padding-bottom: 20%;
+  }
  }
 
 /* // Small devices (landscape phones, less than 768px) */
