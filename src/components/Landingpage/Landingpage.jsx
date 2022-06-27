@@ -83,40 +83,12 @@ function Landingpage() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [loading, setLoading] = useState(false);
 
-  /* TIMEOUT PARA LOADING */
-
-  /*   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 100);
-  }, []);
- */
 
   return (
     <>
-      <Modal
-        aria-labelledby='transition-modal-title'
-        aria-describedby='transition-modal-description'
-        open={open}
-        onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500
-        }}
-      >
-        <Fade in={open}>
-          <Box sx={style}>
-            <Image src={ImgMenu} fluid  />
-          </Box>
-        </Fade>
-      </Modal>
 
-      <Container fluid className={loading ? 'loading true' : 'loading false'}>
-        <Spinner animation='grow' variant='light' />
-      </Container>
+
 
       <Container fluid className='LandingPage__Container'>
         {/* NAVBAR */}
