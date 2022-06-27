@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Landingpage.css';
 
-import { ImgMenu } from '../../images/index.jsx';
+import { ImgMenu } from '../../../public/images/index.jsx';
 import { Container, Image, Spinner } from 'react-bootstrap';
 
 /* Material UI */

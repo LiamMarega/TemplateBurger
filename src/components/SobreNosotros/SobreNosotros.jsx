@@ -2,17 +2,13 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import './SobreNosotros.css';
 
-import { ImgMenu } from '../../images/index.jsx';
 import { Container, Image, Spinner } from 'react-bootstrap';
 
 /* import images */
-import { imgBurger, imgBurger2, imgBurger3, imgPapasGrandes, imgPapasChicas, imgTomato, imgMeet, imgLettuce } from '../../images/index.jsx';
+import { imgBurger, imgBurger2, imgBurger3, imgPapasGrandes, imgPapasChicas, imgTomato, imgMeet, imgLettuce } from '../../../public/images/index.jsx';
 
 /* Material UI */
-import Backdrop from '@mui/material/Backdrop';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Fade from '@mui/material/Fade';
+
 import NavBar from '../NavBar/NavBar';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -93,24 +89,6 @@ function SobreNosotros() {
 
   return (
     <>
-      <Modal
-        aria-labelledby='transition-modal-title'
-        aria-describedby='transition-modal-description'
-        open={open}
-        onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500
-        }}
-      >
-        <Fade in={open}>
-          <Box sx={style}>
-            <Image src={ImgMenu} fluid />
-          </Box>
-        </Fade>
-      </Modal>
-
       <Container fluid className={loading ? 'loading true' : 'loading false'}>
         <Spinner animation='grow' variant='light' />
       </Container>
