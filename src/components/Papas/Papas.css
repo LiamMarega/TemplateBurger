@@ -7,14 +7,14 @@
   font-family: 'Roboto', sans-serif;
 }
 .Papas_Container img {
+  width: 120%;
   border-radius: 5%;
   height: 20%;
   transition: 0.5s;
 }
 
 .Papas_Container img:hover {
-transform: scale(1.2);
-  
+  transform: scale(1.2);
 }
 
 .Papas_ContainerInfo p,
@@ -28,8 +28,6 @@ transform: scale(1.2);
   margin-bottom: 1rem;
   margin-top: 1rem;
   white-space: nowrap;
-    
-    
 }
 
 .Papas_ContainerInfo p {
